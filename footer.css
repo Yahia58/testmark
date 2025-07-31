@@ -21,7 +21,7 @@
 .footer-logo {
   font-size: 28px;
   font-weight: bold;
-  color: #00bcd4;
+  color: #dc12ee;
   margin-bottom: 10px;
 }
 
@@ -60,7 +60,7 @@
 }
 
 .footer-links a:hover {
-  color: #00bcd4;
+  color: #dc12ee;
 }
 
 .footer-social a {
@@ -71,7 +71,7 @@
 }
 
 .footer-social a:hover {
-  color: #00bcd4;
+  color: #dc12ee;
 }
 
 .footer-workdays {
