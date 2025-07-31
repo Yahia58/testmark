@@ -68,12 +68,21 @@
         </div>
       </div>
     </div>
-    <form class="row g-3">
-      <div class="col-md-6"><input type="text" id="name" class="form-control" placeholder="Your Name"></div>
-      <div class="col-md-6"><input type="email" id="email" class="form-control" placeholder="Your Email"></div>
-      <div class="col-12"><textarea class="form-control" id="message" rows="4" placeholder="Message"></textarea></div>
-      <div class="col-12 text-center"><button class="btn btn-primary mt-2" type="submit" id="send-btn">Send</button></div>
-    </form>
+   <form class="row g-3" action="https://formspree.io/f/mblkkppa" method="POST">
+  <div class="col-md-6">
+    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+  </div>
+  <div class="col-md-6">
+    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+  </div>
+  <div class="col-12">
+    <textarea name="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+  </div>
+  <div class="col-12 text-center">
+    <button class="btn btn-primary mt-2" type="submit" id="send-btn">Send</button>
+  </div>
+</form>
+
   </div>
 </section>
 
