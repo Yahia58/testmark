@@ -23,6 +23,7 @@
 .footer-logo p {
   color: #ccc;
   font-size: 14px;
+  line-height: 1.6;
 }
 
 .footer-links h4,
@@ -30,11 +31,14 @@
   margin-bottom: 15px;
   font-size: 16px;
   color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .footer-links ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .footer-links ul li {
@@ -44,7 +48,8 @@
 .footer-links ul li a {
   color: #cccccc;
   text-decoration: none;
-  transition: color 0.3s;
+  font-size: 14px;
+  transition: color 0.3s ease;
 }
 
 .footer-links ul li a:hover {
@@ -61,7 +66,7 @@
   width: 24px;
   height: 24px;
   filter: brightness(0) invert(1);
-  transition: transform 0.3s;
+  transition: transform 0.3s ease;
 }
 
 .social-icons a:hover img {
@@ -74,4 +79,5 @@
   border-top: 1px solid #2c3e50;
   font-size: 13px;
   color: #ccc;
+  margin-top: 30px;
 }
