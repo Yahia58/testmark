@@ -39,27 +39,35 @@
   <div class="container">
     <h2 class="text-center mb-4" id="contact-title">Contact Us</h2>
     <div class="cards-container d-flex flex-wrap justify-content-center gap-4 mb-5">
-      <div class="card">
+
+      <!-- Location Card -->
+      <a href="https://maps.google.com/?q=Egypt,+Luxor" target="_blank" class="card text-decoration-none text-dark">
         <i class="fas fa-map-marker-alt contact-icon"></i>
         <div class="card-content">
           <h4 id="location">Location</h4>
           <p id="location-address">Egypt, Luxor</p>
         </div>
-      </div>
-      <div class="card">
+      </a>
+
+      <!-- Phone Card -->
+      <a href="tel:+20111111111" class="card text-decoration-none text-dark">
         <i class="fas fa-phone-alt contact-icon"></i>
         <div class="card-content">
           <h4 id="phone">Phone</h4>
           <p id="phone-number">+20 111111111</p>
         </div>
-      </div>
-      <div class="card">
+      </a>
+
+      <!-- Email Card -->
+      <a href="mailto:info@MarketX.com" class="card text-decoration-none text-dark">
         <i class="fas fa-envelope contact-icon"></i>
         <div class="card-content">
           <h4 id="emaill">Email</h4>
           <p id="email-address">info@MarketX.com</p>
         </div>
-      </div>
+      </a>
+
+      <!-- Work Days Card -->
       <div class="card">
         <i class="fas fa-clock contact-icon"></i>
         <div class="card-content">
@@ -67,7 +75,10 @@
           <p id="work_hours">Sun - Thu, 10:00 - 18:00</p>
         </div>
       </div>
+
     </div>
+  </div>
+ 
   <form id="contact-form" class="row g-3">
   <div class="col-md-6">
     <input type="text" name="name" class="form-control" placeholder="Your Name" required>
