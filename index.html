@@ -10,9 +10,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+<!-- Font Awesome -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
 
   <link rel="stylesheet" href="style.css" />
-  
+  <link rel="stylesheet" href="beutistyles.css" />
+   <link rel="stylesheet" href="header.css" />
+ 
+   
   <link rel="stylesheet" href="footer.css" />
 </head>
 <body>
@@ -20,7 +28,7 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
   <div class="container">
-    <a class="navbar-brand" href="#">MarketX</a>
+    <a class="navbar-brand" href="index.html">MarketX</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
       data-bs-target="#navbarNav" aria-controls="navbarNav"
       aria-expanded="false" aria-label="Toggle navigation">
@@ -43,11 +51,15 @@
 <!-- Hero -->
 <header id="home" class="hero d-flex align-items-center text-white text-center">
   <div class="container">
-    <h1 data-aos="fade-down" id="hero-title">Grow Your Business With Us</h1>
-   <p data-aos="fade-up" data-aos-delay="200" id="dms-title">Digital marketing solutions that deliver real results</p>
-    <a href="#contact" class="btn btn-primary mt-3" data-aos="fade-up" data-aos-delay="400"id="get-started-btn">Get Started</a>
+    <h1 class="animated-gradient" data-aos="fade-down" id="hero-title">Grow Your Business With Us</h1>
+    <p class="animated-gradient" data-aos="fade-up" data-aos-delay="200" id="dms-title">
+      Digital marketing solutions that deliver real results
+    </p>
+    <a href="contact.html" class="btn btn-primary mt-3" data-aos="fade-up" data-aos-delay="400" id="get-started-btn"> Get Started </a>
   </div>
 </header>
+
+ 
 
 <!-- About -->
 <section id="about" class="py-5 bg-light">
@@ -117,63 +129,81 @@
       </div>
     </div>
   </div>
+<button class="main-btn">  See Projects   <i class="fas fa-arrow-right"></i></button>
+
 </section>
 
 
-<!-- Contact --><section id="contact" class="py-5">
-  <div class="container" data-aos="fade-up">
-    <h2 class="text-center mb-4" data-i18n="contact_us">Contact Us</h2>
-    <section>
+<!-- Contact -->
+ <section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4" id="contact-title">Contact Us</h2>
     <div class="cards-container d-flex flex-wrap justify-content-center gap-4 mb-5">
-      <div class="card">
+
+      <!-- Location Card -->
+      <a href="https://maps.google.com/?q=Egypt,+Luxor" target="_blank" class="card text-decoration-none text-dark">
         <i class="fas fa-map-marker-alt contact-icon"></i>
         <div class="card-content">
           <h4 id="location">Location</h4>
           <p id="location-address">Egypt, Luxor</p>
         </div>
-      </div>
-      <div class="card">
+      </a>
+
+      <!-- Phone Card -->
+      <a href="tel:+20111111111" class="card text-decoration-none text-dark">
         <i class="fas fa-phone-alt contact-icon"></i>
         <div class="card-content">
           <h4 id="phone">Phone</h4>
           <p id="phone-number">+20 111111111</p>
         </div>
-      </div>
-      <div class="card">
+      </a>
+
+      <!-- Email Card -->
+      <a href="mailto:info@MarketX.com" class="card text-decoration-none text-dark">
         <i class="fas fa-envelope contact-icon"></i>
         <div class="card-content">
           <h4 id="emaill">Email</h4>
           <p id="email-address">info@MarketX.com</p>
         </div>
-      </div>
-      <div class="card">
-        <i class="fas fa-clock contact-icon"></i>
+      </a>
+
+      <!-- Work Days Card -->
+      <a href="about.html" class="card text-decoration-none text-dark">
+               <i class="fas fa-clock contact-icon"></i>
         <div class="card-content">
           <h4 id="work_days">Work Days</h4>
           <p id="work_hours">Sun - Thu, 10:00 - 18:00</p>
         </div>
-      </div>
+    </a>
+
     </div>
-    
- 
+  </div>
  
 
-    <form class="row g-3">
-      <div class="col-md-6">
-        <input type="text" id="name" class="form-control" placeholder="Your Name">
-      </div>
-      <div class="col-md-6">
-        <input type="email"id="email" class="form-control" placeholder="Your Email">
-      </div>
-      <div class="col-12">
-        <textarea class="form-control" id="message" rows="4" placeholder="Message"></textarea>
-      </div>
-      <div class="col-12 text-center">
-        <button class="btn btn-primary mt-2" type="submit">Send</button>
-      </div>
-    </form>
+ <form id="contact-form" class="row g-3">
+  <div class="col-md-6">
+    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+  </div>
+  <div class="col-md-6">
+    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+  </div>
+  <div class="col-12">
+    <textarea name="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+  </div>
+  <div class="col-12 text-center">
+    <button class="btn btn-primary mt-2" type="submit" id="send-btn">Send</button>
+  </div>
+</form>
+
+<!-- ✅ رسالة بعد الإرسال -->
+<div id="form-message" class="text-center mt-3 text-success fw-bold" style="display:none;">
+  ✅ Message sent successfully!
+</div>
+
+
   </div>
 </section>
+
 <!-- زر الترجمة -->
 <div class="language-switcher bottom-left">
   <button id="lang-toggle" class="floating-btn" title="Change Language">
@@ -190,11 +220,11 @@
   <i class="fas fa-arrow-up"></i>
 </button>
 
-<!-- Footer --><!-- في آخر الصفحة الرئيسية مثلاً -->
-  <footer>
+
+<!-- Footer -->
+ <!-- في آخر الصفحة الرئيسية مثلاً -->
 <div id="footer-container"></div>
-<script src="load-footer.js"></script> 
-  </footer>
+<script src="load-footer.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
@@ -512,6 +542,31 @@ if (Dms) Dms.textContent = t.dms;
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 </script>
+
+<script>
+  document.getElementById('contact-form').addEventListener('submit', async function(e) {
+    e.preventDefault(); // منع التحويل
+
+    const form = e.target;
+    const data = new FormData(form);
+
+    const response = await fetch('https://formspree.io/f/mblkkppa', {
+      method: 'POST',
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    if (response.ok) {
+      form.reset();
+      document.getElementById('form-message').style.display = 'block';
+    } else {
+      alert('❌ حدث خطأ أثناء الإرسال. حاول مرة أخرى.');
+    }
+  });
+</script>
+
 
 </body>
 </html>

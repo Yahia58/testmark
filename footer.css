@@ -21,7 +21,7 @@
 .footer-logo {
   font-size: 28px;
   font-weight: bold;
-  color: #dc12ee;
+  color: #00bcd4;
   margin-bottom: 10px;
 }
 
@@ -89,14 +89,10 @@
   color: #777;
 }
 
-.footer {
-  background-color: #111;
-  color: #ccc;
-  text-align: center;
-  padding: 30px 20px;
-}
 
-.footer-bottom p {
-  font-size: 14px;
-  color: #888;
-}
+
+
+ .navbar .navbar-brand{
+  color: #dc12ee;
+  font-weight: bold;
+ }

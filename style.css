@@ -147,7 +147,7 @@ footer {
 }
 
 .service-card:hover {
-  background-color: #0d6efd;
+  background-color: #dc12ee;
   transform: translateY(-5px);
 }
 
@@ -187,7 +187,7 @@ footer {
 }
 
 .floating-btn:hover {
-  background-color: #0d6efd;
+  background-color: #dc12ee;
   color: #fff;
 }
 
@@ -228,7 +228,7 @@ footer {
 }
 
 .lang-option:hover {
-  background-color: #0d6efd;
+  background-color: #dc12ee;
 }
 #lang-Toggle {
   position: fixed;
@@ -247,7 +247,7 @@ html[lang="ar"] #lang-Toggle {
   bottom: 20px;
   right: 20px; /* هيتبدل بالـ left لو اللغة عربية */
   z-index: 1000;
-  background-color: #007bff;
+  background-color: #dc12ee;
   color: white;
   border: none;
   padding: 10px;
@@ -408,7 +408,7 @@ footer {
 }
 
 .service-card:hover {
-  background-color: #0d6efd;
+  background-color: #dc12ee;
   transform: translateY(-5px);
 }
 
@@ -420,7 +420,7 @@ footer {
 
 .service-icon {
   font-size: 48px;
-  color: #0d6efd;
+  color: #dc12ee;
   transition: color 0.3s ease;
 }
 .project-card {
@@ -448,7 +448,7 @@ footer {
 }
 
 .floating-btn:hover {
-  background-color: #0d6efd;
+  background-color: #dc12ee;
   color: #fff;
 }
 
@@ -489,7 +489,7 @@ footer {
 }
 
 .lang-option:hover {
-  background-color: #0d6efd;
+  background-color: #dc12ee;
 }
 #lang-Toggle {
   position: fixed;
@@ -508,7 +508,7 @@ html[lang="ar"] #lang-Toggle {
   bottom: 20px;
   right: 20px; /* هيتبدل بالـ left لو اللغة عربية */
   z-index: 1000;
-  background-color: #007bff;
+  background-color: #dc12ee;
   color: white;
   border: none;
   padding: 10px;
@@ -517,45 +517,7 @@ html[lang="ar"] #lang-Toggle {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-   nav {
-      display: flex;
-      justify-content: space-between;
-       align-items: center;
-      background-color: white;
-      padding: 0px 30px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      margin-bottom: 0px;
-    }
-
-    nav ul {
-      display: flex;
-      list-style: none;
-      gap: 10px;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: var(--text-color);
-      padding: 8px 15px;
-      border-radius: 50px;
-      transition: background-color 0.3s;
-    }
-
-    .navbar ul li a:hover {
-      background-color: blue;
-      color: white;
-      padding: 0.3rem;
-    }
-    .navbar {
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
-}
-
-.navbar .nav-link {
-  padding: 0.5rem 1rem;
-  font-size: 0.95rem;
-}
-
+ 
 
    .cards-container {
       display: flex;
@@ -584,7 +546,7 @@ html[lang="ar"] #lang-Toggle {
 
     .card i {
       font-size: 1.8rem;
-      color: #007bff;
+      color: #dc12ee;
       background-color: #e6f0ff;
       padding: 0.8rem;
       border-radius: 50%;
@@ -609,7 +571,7 @@ html[lang="ar"] #lang-Toggle {
       word-break: break-word;
     }
     .card:hover{
-      background-color: #007bff;
+      background-color: #dc12ee;;
       color: white;
     }
       .card:hover .contact-icon,
@@ -641,7 +603,7 @@ html[lang="ar"] #lang-Toggle {
     }
     .service-icon {
       font-size: 48px;
-      color: #0d6efd;
+      color: #dc12ee;
     }
     footer {
       background: #111;
@@ -703,4 +665,8 @@ html[lang="ar"] #lang-Toggle {
   margin-top: 30px;
   border-top: 1px solid #444;
   font-size: 14px;
+}
+
+#home{
+color: #dc12ee;
 }

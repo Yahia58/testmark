@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>معرض الأعمال - MarketX</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #444;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ff6600;
+    }
+
+    .portfolio {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .portfolio h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+      color: #222;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-content {
+      padding: 15px;
+    }
+
+    .project-content h3 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .project-content p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    .project-content a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 12px;
+      background-color: #ff6600;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .project-content a:hover {
+      background-color: #e65c00;
+    }
+
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>معرض الأعمال</h1>
+    <p>نماذج من المشاريع التي أنجزناها بإبداع واحترافية</p>
+  </header>
+
+  <nav>
+    <a href="#">الرئيسية</a>
+    <a href="#portfolio">أعمالي</a>
+    <a href="#contact">تواصل معي</a>
+  </nav>
+
+  <section class="portfolio" id="portfolio">
+    <h2>أبرز المشاريع</h2>
+    <div class="portfolio-grid">
+      <div class="project-card">
+        <img src="https://placehold.co/400x200/222/fff?text=E-Commerce" alt="مشروع متجر إلكتروني">
+        <div class="project-content">
+          <h3>متجر إلكتروني متكامل</h3>
+          <p>تم تطوير متجر إلكتروني باستخدام WordPress وWooCommerce مع نظام دفع آمن وتصميم متجاوب.</p>
+          <a href="#">عرض المشروع</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="https://placehold.co/400x200/444/fff?text=Company+Website" alt="موقع شركة">
+        <div class="project-content">
+          <h3>موقع شركة استشارية</h3>
+          <p>موقع احترافي متعدد الصفحات، يشمل خدمات، مدونة، ونموذج تواصل، تم تصميمه باستخدام HTML وCSS وBootstrap.</p>
+          <a href="#">عرض المشروع</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="https://placehold.co/400x200/666/fff?text=Portfolio" alt="موقع شخصي">
+        <div class="project-content">
+          <h3>موقع بورتفوليو شخصي</h3>
+          <p>تصميم بسيط وجذاب لعرض السيرة الذاتية، الأعمال السابقة، وخدمات الفريلانس، باستخدام React.js.</p>
+          <a href="#">عرض المشروع</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="https://placehold.co/400x200/888/fff?text=Mobile+App" alt="تطبيق موبايل">
+        <div class="project-content">
+          <h3>واجهة تطبيق موبايل</h3>
+          <p>تصميم واجهة تطبيق لحجز المواعيد باستخدام Figma و Adobe XD، قابل للتحويل إلى Flutter.</p>
+          <a href="#">عرض التصميم</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 جميع الحقوق محفوظة - MarketX</p>
+  </footer>
+</body>
+
+</html>
