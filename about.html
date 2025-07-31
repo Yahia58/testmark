@@ -3,19 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About - MarketX</title>
+  <title data-i18n="about">About - MarketX</title>
 
-  <!-- CSS Dependencies -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="ab.css" />
   <link rel="stylesheet" href="style.css" />
+  
   <link rel="stylesheet" href="footer.css" />
+  
 </head>
-
 <body>
+
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
@@ -27,26 +30,165 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="home">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html" data-i18n="about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html" data-i18n="services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html" data-i18n="projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="contact">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- About Section -->
-<section class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center mb-4" id="about-title">About Us</h2>
-    <p class="text-center" id="about-text">
-      We are a full-service marketing agency helping businesses grow through data-driven strategies and creative campaigns.
-    </p>
+<!-- Hero Section -->
+ 
+<section class="py-5 text-white" style="background-image: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d'); background-size: cover; background-position: center;">
+  <div class="container text-center">
+    <h1 class="display-4 fw-bold">We help brands grow</h1>
+    <p class="lead">With creativity, strategy, and passion</p>
   </div>
 </section>
 
+<!-- About Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4" data-i18n="about">About Us</h2>
+    <p class="text-center" data-i18n="aboutText">We are a full-service marketing agency helping businesses grow through data-driven strategies and creative campaigns.</p>
+  </div>
+</section>
+
+  <section class="about-intro section">
+    <div class="container">
+      <div class="text">
+        <h2>Who We Are</h2>
+        <p>We are a creative and experienced marketing agency helping brands reach their full potential through innovative solutions and strategic thinking.</p>
+      </div>
+      <div class="image">
+        <img src="images/about-us.jpg" alt="About Image">
+      </div>
+    </div>
+  </section>
+<!-- Testimonials Section -->
+<section class="testimonials py-5 bg-white" data-aos="fade-up">
+  <div class="container text-center">
+    <h2 class="mb-4">What Our Clients Say</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="testimonial p-4 shadow rounded">
+          <p>"Working with your agency was the best decision we made. The results speak for themselves!"</p>
+          <h6 class="mt-3 mb-0">Sarah Johnson</h6>
+          <small>Marketing Director, Alpha Co.</small>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="testimonial p-4 shadow rounded">
+          <p>"Creative, reliable, and always on time. Highly recommended!"</p>
+          <h6 class="mt-3 mb-0">James Lee</h6>
+          <small>CEO, VisionTech</small>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="testimonial p-4 shadow rounded">
+          <p>"They truly understood our brand and delivered beyond expectations."</p>
+          <h6 class="mt-3 mb-0">Emily White</h6>
+          <small>Founder, StyleSense</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our Team Section -->
+<section class="our-team py-5" data-aos="fade-up">
+  <div class="container text-center">
+    <h2 class="mb-5">Meet Our Team</h2>
+    <div class="row">
+      <div class="col-md-3">
+        <img src="https://randomuser.me/api/portraits/men/11.jpg" class="rounded-circle mb-3" width="120" alt="Team Member">
+        <h5>Michael Adams</h5>
+        <p class="text-muted">CEO</p>
+      </div>
+      <div class="col-md-3">
+        <img src="https://randomuser.me/api/portraits/women/22.jpg" class="rounded-circle mb-3" width="120" alt="Team Member">
+        <h5>Laura Bennett</h5>
+        <p class="text-muted">Marketing Lead</p>
+      </div>
+      <div class="col-md-3">
+        <img src="https://randomuser.me/api/portraits/men/33.jpg" class="rounded-circle mb-3" width="120" alt="Team Member">
+        <h5>Chris Turner</h5>
+        <p class="text-muted">Creative Director</p>
+      </div>
+      <div class="col-md-3">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle mb-3" width="120" alt="Team Member">
+        <h5>Olivia Parker</h5>
+        <p class="text-muted">Client Manager</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why-choose-us bg-light py-5">
+  <div class="container text-center">
+    <h2 class="mb-4">Why Choose Us</h2>
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <i class="fas fa-brain fa-3x mb-3 text-primary"></i>
+            <h5 class="card-title">Creative Ideas</h5>
+            <p class="card-text">We offer unique and tailored solutions.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <i class="fas fa-bullseye fa-3x mb-3 text-primary"></i>
+            <h5 class="card-title">Targeted Strategy</h5>
+            <p class="card-text">Focused and result-driven campaigns.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <i class="fas fa-users fa-3x mb-3 text-primary"></i>
+            <h5 class="card-title">Expert Team</h5>
+            <p class="card-text">Passionate and experienced professionals.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section class="vision-mission section">
+    <div class="container two-columns">
+      <div class="column">
+        <h3>Our Vision</h3>
+        <p>To be the leading marketing agency that redefines brand presence in the digital era.</p>
+      </div>
+      <div class="column">
+        <h3>Our Mission</h3>
+        <p>Empowering businesses with tailored marketing strategies that drive growth, engagement, and long-term success.</p>
+      </div>
+    </div>
+  </section>
+
+<!-- Our Core Values Section -->
+
+  <section class="core-values section">
+    <div class="container">
+      <h2>Our Core Values</h2>
+      <div class="values-grid">
+        <div class="value-box"><i class="fas fa-lightbulb"></i><h4>Innovation</h4><p>We thrive on creativity and bold ideas.</p></div>
+        <div class="value-box"><i class="fas fa-handshake"></i><h4>Integrity</h4><p>Honesty and transparency are key in all we do.</p></div>
+        <div class="value-box"><i class="fas fa-chart-line"></i><h4>Results</h4><p>Driven by performance and measurable outcomes.</p></div>
+        <div class="value-box"><i class="fas fa-users"></i><h4>Teamwork</h4><p>Collaboration is the foundation of our success.</p></div>
+      </div>
+    </div>
+  </section>
 <!-- Language Switcher -->
 <div class="language-switcher bottom-left">
   <button id="lang-toggle" class="floating-btn" title="Change Language">🌐</button>
@@ -63,6 +205,19 @@
 <!-- في آخر الصفحة الرئيسية مثلاً -->
 <div id="footer-container"></div>
 <script src="load-footer.js"></script>
+
+
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<!-- AOS Animation -->
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
 
 <!-- Scripts -->
